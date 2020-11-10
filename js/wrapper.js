@@ -24,12 +24,12 @@ getHTML('/components/header.html', (err, res) => {
 	} else {
 		body.innerHTML = res + body.innerHTML;
 	}
+});
 
-	getHTML('/components/footer.html', (err, res) => {
-		if (err) {
-			console.error('Could not load footer');
-		} else {
-			body.innerHTML += res;
-		}
-	});
+getHTML('/components/footer.html', (err, res) => {
+	if (err) {
+		console.error('Could not load footer');
+	} else {
+		body.innerHTML += res;
+	}
 });
