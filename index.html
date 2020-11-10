@@ -4,21 +4,80 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/theme.css" />
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
 		<title>NAMC NZ</title>
 	</head>
 	<body>
-		<h1>This is the NAMC!</h1>
-
-		<div class="container">
-			<h2>Typograhpy</h2>
-			<p>use the lead class to stand out</p>
-			<p class="lead">This text stnads out</p>
-			<p>This is a regular parragraph</p>
+		<div class="jumbotron jumbotron-fluid" style="background: black url('/img/header.jpg') fixed; background-size: cover; min-height: 50vh">
+			<div class="container text-white" style="text-shadow: 0 2px 5px #00000063">
+				<h1 class="display-4">Website Title</h1>
+				<p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+			</div>
+		</div>
+		<div class="container text-center mb-4">
+			<p>The Northern Alaskan Malamute Club organises annual events and activities such as Rig Racing, Weight Pulling, Ribbon Parades, social walks, fun days, Championship and Open Shows.</p>
+			<p>As a club we are dedicated to providing on-going support for Alaskan Malamutes and their owners as well as upholding a code of ethics and administering Show Points Achievement Awards aimed to encourage entrance into the show ring.</p>
+			<button class="btn btn-primary">Learn More ></button>
 		</div>
 
-		<div class="container-fluid">
-			<p><abbr title="Oh my god">OMG</abbr> there's an abbrieviation in this line of text</p>
+		<div class="jumbotron jumbotron-fluid bg-dark">
+			<div class="container">
+				<div class="card">
+					<div class="card-body text-center">
+						<h2>Upcoming Events</h2>
+						<button class="btn btn-primary">View All ></button>
+					</div>
+				</div>
+			</div>
 		</div>
+
+		<div class="container text-center mb-4">
+			<h2>Sponsors</h2>
+			<img src="/img/purina.jpg" class="rounded img-fluid" alt="Purina Pro Plan Logo" style="max-width: 300px" />
+		</div>
+
+		<div class="jumbotron jumbotron-fluid bg-secondary mb-0">
+			<div class="container">
+				<div class="card">
+					<div class="card-body">
+						<h2 class="text-center">Contact</h2>
+
+						<div class="row">
+							<div class="col-lg-7 border-right">
+								<p class="mb-0">For all inquiries, please use this contact form</p>
+								<form>
+									<input type="text" name="name" placeholder="Name" class="form-control mb-1" required />
+									<input type="email" name="email" placeholder="Email" class="form-control mb-1" required />
+									<select name="topic" class="form-control mb-1">
+										<option value="" disabled selected>Please select a Subject</option>
+										<option value="rescue">Rescue</option>
+										<option value="breeding">Breeding</option>
+									</select>
+									<textarea name="message" rows="30" placeholder="Message..." class="form-control mb-3 mb-md-2" style="min-width: 100%; max-height: 200px; min-height: 200px; resize: none" required></textarea>
+								</form>
+								<div class="row">
+									<div class="col-md d-flex justify-content-center mb-1 mb-md-auto">
+										<div class="h-captcha" data-sitekey="your_site_key"></div>
+									</div>
+									<div class="col-md mb-2 mb-md-auto">
+										<button class="btn btn-primary btn-block btn-sm">Submit</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-5">
+								<p class="display-block"><b>Meg Hamilton</b><br /><b>Email:</b> northern_alaskan_malamute_club@hotmail.com</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://hcaptcha.com/1/api.js" async defer></script>
 
 		<script src="js/wrapper.js"></script>
 	</body>

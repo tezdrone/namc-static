@@ -1,1 +1,42 @@
-@import '../../node_modules/bootstrap/scss/bootstrap';
+//Import Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Questrial&display=swap');
+
+//Set Variables
+$font-family-base: 'Montserrat', sans-serif;
+$enable-rounded: false;
+
+$primary: #16c2ff;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+font-header {
+	font-family: 'Questrial', sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: #fff;
+	margin-left: 0.4rem;
+	margin-right: 0.4rem;
+
+	&:hover {
+		color: #fff;
+	}
+}
+
+.btn {
+	border-radius: 5rem;
+
+	&:not(.btn-sm) {
+		padding: 0.75rem 1.75rem;
+	}
+
+	&.btn-sm {
+		padding: 0.5rem 1.25rem;
+	}
+}
